@@ -1,0 +1,52 @@
+@import "../../../../../scripts/static/styles/colors.scss";
+@import "../../../../static/styles/main.scss";
+
+.top-intro-container {
+    background: linear-gradient(135deg, #e4f5fc 0%,$cyan-300 75%,$cyan-600 100%);
+    padding: 100px;
+}
+
+.text-container {
+    @extend .flex-column;
+    @extend .flex-center;
+    text-align: center;
+
+    .top-heading {
+        margin-top: -10px;
+        width: 100%;
+        font-size: 33px;
+        font-weight: bold;
+        color: $cyan-700;
+    }
+    
+    .sub-heading {
+        width: 70%;
+        color: $cyan-500;
+    }
+
+    .small-heading {
+        color: $yellow-700;
+        font-weight: bold;
+    }
+
+    .circle {
+        background-color: $yellow-700;
+        align-self: center;
+        margin: 0 8px 3px 8px !important;
+        height: 30%;
+        width: 10px;
+        border-radius: 100%;
+    }
+}
+
+.lightbulb-container {
+    padding: 100px;
+
+    .lightbulb-image {
+        max-width: 100%;
+    }
+
+    .image-credit {
+        font-size: 8px !important;
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../../static/styles/colors.scss";
+@import "../../../static/styles/main.scss";
+
+.journey-header {
+    padding: 30px;
+    font-weight: bold;
+    color: $cyan-600;
+    font-size: 35px;
+}
+
+.journey-container {
+    width: 80%;
+    padding: 20px;
+}
+
+.journey-image {
+    max-width: 100%;
+    box-shadow: 0 5px 35px 0 grey;
+}
+
+.image-credit {
+    @extend .image-credit;
+}
