@@ -14,7 +14,8 @@ export default function TopIntro() {
                     <h4 class="small-heading mx-auto">Connect</h4>
                 </div>
                 <h1 class="top-heading"> Improve your learning and contribute to the community </h1>
-                <h5 class="sub-heading"> Join us on our mission to improve the learning process and increase the accessibility of information across the industry</h5>
+                <h5 class="sub-heading"> We are on a mission to improve the learning process and increase the accessibility of information across the industry</h5>
+                <button class="join-button mx-auto">Join us on our mission</button>
             </div>
             <div class="lightbulb-container ml-auto col-12 col-md-6 col-lg-6">
                 <img src={lightbulbImage} class="lightbulb-image mx-auto row" alt="lightbulb" />

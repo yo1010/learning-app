@@ -2,31 +2,56 @@
 @import "../../../../static/styles/main.scss";
 
 .top-intro-container {
-    background: linear-gradient(135deg, #e4f5fc 0%,$cyan-300 75%,$cyan-600 100%);
+    background: linear-gradient(135deg, #e4f5fc 65%, $cyan-800 100%);
     padding: 100px;
+    height: 100vh;
 }
 
 .text-container {
     @extend .flex-column;
     @extend .flex-center;
-    text-align: center;
+    text-align: cener;
 
     .top-heading {
         margin-top: -10px;
         width: 100%;
         font-size: 33px;
         font-weight: bold;
-        color: $cyan-700;
+        color: $cyan-800;
+        font-family: 'Nunito', sans-serif;
     }
     
     .sub-heading {
         width: 70%;
         color: $cyan-500;
+        font-family: 'Nunito', sans-serif;
     }
 
     .small-heading {
         color: $yellow-700;
         font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .join-button {
+        background-color: $yellow-700;
+        border: none;
+        margin-top: 20px;
+        color: white;
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: 0 26px 60px -12px gray;
+        transition: background-color .2s, box-shadow .2s, transform .2s;
+        outline: none;
+
+        &:hover {
+            background-color: $yellow-800;
+            box-shadow: 0 26px 60px -8px gray;
+            transform: scale(1.02);
+        }   
     }
 
     .circle {
@@ -40,10 +65,10 @@
 }
 
 .lightbulb-container {
-    padding: 100px;
+    padding-top: 70px;
 
     .lightbulb-image {
-        max-width: 100%;
+        width: 650px;
     }
 
     .image-credit {

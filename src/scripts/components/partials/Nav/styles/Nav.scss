@@ -8,6 +8,7 @@
         color: white !important;
         font-weight: bold;
         font-size: 25px;
+        font-family: 'Nunito', sans-serif;
 
         .cyan {
             color: $cyan-600;
@@ -20,9 +21,19 @@
         text-decoration: none;
         outline: none;
         font-weight: 500;
+        font-family: 'Nunito', sans-serif;
     }
 
     .auth-item .auth-link {
         color: white !important; 
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .nav-beta {
+        color: $cyan-900 !important;
+        font-weight: bold !important;
+        font-size: 11px !important;
+        margin-left: -12px;
+        margin-bottom: 15px !important;
     }
 }

@@ -5,7 +5,7 @@ import './styles/OurJourney.scss'
 export default function OurJourney() {
     return (
         <React.Fragment>
-            <h1 class="journey-header">
+            <h1 class="journey-header mt-5">
                 Our Journey
             </h1>
             <div class="journey-container mx-auto">

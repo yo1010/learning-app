@@ -1,0 +1,47 @@
+@import "../../../../../scripts/static/styles/colors.scss";
+@import "../../../../static/styles/main.scss";
+
+.team-container {
+    padding: 20px;
+}
+
+.team-header {
+    padding: 30px;
+
+    .team-title {
+        color: $yellow-700;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .separator {
+        width: 15%;
+        min-width: 80px;
+        background-color: $yellow-700;
+        border: solid 3px $yellow-700;
+        border-radius: 25px;
+    }
+}
+
+.team-messages {
+    width: 75%;
+}
+
+.team-text {
+    box-shadow: 0 0 100px -60px $yellow-800;
+    padding: 10px;
+    margin: 20px;
+    transition: box-shadow .5s, transform .2s;
+    color: $cyan-900;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+
+    &:hover {
+        box-shadow: 0 0 100px -40px gray;
+        transform: scaleY(1.05);
+    }
+}
+
+.team-paragraph {
+    width: 60%;
+}
