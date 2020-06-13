@@ -2,28 +2,37 @@
 @import "../../../../static/styles/main.scss";
 
 .top-intro-container {
-    background: linear-gradient(135deg, #e4f5fc 65%, $cyan-800 100%);
+    background: linear-gradient(135deg, $cyan-800 5%, white 60%, $cyan-800 100%);
     padding: 100px;
     height: 100vh;
+    min-width: 100%;
+}
+
+.pinned-container {
+    @extend .pin-section;
+}
+
+.top-intro-row {
+    padding: 45px;
 }
 
 .text-container {
     @extend .flex-column;
     @extend .flex-center;
-    text-align: cener;
+    text-align: center;
 
     .top-heading {
         margin-top: -10px;
         width: 100%;
         font-size: 33px;
         font-weight: bold;
-        color: $cyan-800;
+        color: white;
         font-family: 'Nunito', sans-serif;
     }
     
     .sub-heading {
         width: 70%;
-        color: $cyan-500;
+        color: $cyan-800;
         font-family: 'Nunito', sans-serif;
     }
 
@@ -34,24 +43,8 @@
     }
     
     .join-button {
-        background-color: $yellow-700;
-        border: none;
+        @extend .yellow-button;
         margin-top: 20px;
-        color: white;
-        font-size: 18px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        padding: 15px;
-        border-radius: 30px;
-        box-shadow: 0 26px 60px -12px gray;
-        transition: background-color .2s, box-shadow .2s, transform .2s;
-        outline: none;
-
-        &:hover {
-            background-color: $yellow-800;
-            box-shadow: 0 26px 60px -8px gray;
-            transform: scale(1.02);
-        }   
     }
 
     .circle {
@@ -65,13 +58,12 @@
 }
 
 .lightbulb-container {
-    padding-top: 70px;
 
     .lightbulb-image {
-        width: 650px;
+        max-width: 100%;
     }
 
     .image-credit {
-        font-size: 8px !important;
+        font-size: 7px !important;
     }
 }

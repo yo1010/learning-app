@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default class Nav extends Component {
     render() {
         return (
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand ml-5" href="#">Learn<span class="cyan">IFY</span></a>
                 <span class="nav-beta" to="/">Beta Version</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,12 +31,12 @@ export default class Nav extends Component {
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active auth-item">
-                            <Link class="nav-link auth-link" to="/">Log In</Link>
-                        </li>
-                        <li class="nav-item auth-item">
-                            <a class="nav-link auth-link" href="#">Join Now</a>
-                        </li>
+                        <button class="nav-item nav-btn auth-item">
+                            <Link class="nav-link" to="/">Log In</Link>
+                        </button>
+                        <button class="nav-item nav-btn auth-item">
+                            <a class="nav-link" href="#">Join Now</a>
+                        </button>
                     </ul>
                 </div>
             </nav>
