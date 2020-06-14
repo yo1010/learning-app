@@ -15,12 +15,12 @@ export default class HowItWorks extends Component {
                             </div>
                         </div>
                         <div class="how-steps">
-                            <div id="trigger" class="cards-row">
+                            <div id="trigger" class="cards-row mt-5">
                                 <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
                                     <div class="how-card" id="animate">
                                         <span>
                                             <h3> 1. </h3>
-                                            <h5> Make an account and provide information about your learnning by following the steps </h5>
+                                            <h5> Make an account and provide information about your learning by following the steps </h5>
                                         </span>
                                     </div>
                                 </div>
@@ -49,6 +49,15 @@ export default class HowItWorks extends Component {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="how-graphic-container">
+                            <Controller>
+                                <div id="trigger" class="trigger"/>
+                                <Scene duration={1200} classToggle="animation-graphic-how" triggerElement="trigger" >
+                                    <div class="how-graphic" />
+                                </Scene>
+                                <div class="how-graphic-one" />
+                            </Controller>
                         </div>
                     </div>
                 </Scene>

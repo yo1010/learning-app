@@ -4,6 +4,9 @@
 .team-container {
     padding: 20px;
     background-color: whitesmoke;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .team-header {
@@ -26,7 +29,7 @@
 }
 
 .team-messages {
-    width: 75%;
+    width: 50%;
     padding-bottom: 20px;
 }
 
@@ -60,4 +63,51 @@
     transition: all .2s;
     box-shadow: 0 0 100px -35px gray;
     transform: scale(1.1);
+}
+
+.graphic-container {
+    position: relative;
+    bottom: 0;
+    right: 0;
+
+    .graphic {
+        transition: all .5s;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        left: -140px;
+        bottom: 100px;
+        border-radius: 50%;
+        border: solid 40px $yellow-400;
+    }
+    
+    .graphic-one {
+        transition: all .5s;
+        position: relative;
+        bottom: 50px;
+        left: -120px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: solid 55px $cyan-900;
+    }
+}
+
+.animation-graphic-one {
+    border: solid 40px $cyan-400;
+    animation: graphic-one-animate .5s infinite;
+}
+
+
+.trigger-one {
+    position: absolute !important;
+    top: 1000px !important;
+    margin-top: 200px; 
+}
+
+@keyframes graphic-one-animate {
+    0% { left: -140px }
+    33% { left: -139.5px }
+    66% { left: -140.5px }
+    100% { left: -140px }
 }

@@ -11,10 +11,8 @@ export default class HomePage extends Component {
         return (
             <div class="home-container">
                 <TopIntro />
-                <EmptyScreen />
                 <OurCompany />
                 <HowItWorks />
-                <SectionWipes />
             </div>
         )
     }

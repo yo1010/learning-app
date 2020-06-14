@@ -4,8 +4,9 @@
 .top-intro-container {
     background: linear-gradient(135deg, $cyan-800 5%, white 60%, $cyan-800 100%);
     padding: 100px;
-    height: 100vh;
-    min-width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
 }
 
 .pinned-container {
