@@ -7,7 +7,7 @@ export default class HowItWorks extends Component {
         return (
             
             <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
-                <Scene pin indicator={true}>
+                <Scene pin>
                     <div class="how-container">
                         <div class="how-header row">
                             <div class="mx-auto my-5">
@@ -15,8 +15,9 @@ export default class HowItWorks extends Component {
                             </div>
                         </div>
                         <div class="how-steps">
-                            <div id="trigger" class="cards-row mt-5">
+                            <div class="cards-row">
                                 <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                    <i class="fas fa-sign-in-alt" />
                                     <div class="how-card" id="animate">
                                         <span>
                                             <h3> 1. </h3>
@@ -25,6 +26,7 @@ export default class HowItWorks extends Component {
                                     </div>
                                 </div>
                                 <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                    <i class="fas fa-chart-pie" />
                                     <div class="how-card">
                                         <span>
                                             <h3> 2. </h3>
@@ -33,6 +35,7 @@ export default class HowItWorks extends Component {
                                     </div>
                                 </div>
                                 <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                    <i class="fas fa-clipboard-list" />
                                     <div class="how-card">
                                         <span>
                                             <h3> 3. </h3>
@@ -41,18 +44,19 @@ export default class HowItWorks extends Component {
                                     </div>
                                 </div>
                                 <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                    <i class="fas fa-clipboard-check"></i>
                                     <div class="how-card">
                                         <span>
                                             <h3> 4. </h3>
-                                            <h5> Recieve insights from unbiased analysis of the best practices and most important success factors pointed out by experienced professionals </h5>
+                                            <h5> Recieve insights from unbiased analysis of the best practices pointed out by experienced professionals </h5>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="how-graphic-container">
+                            <div id="trigger" class="trigger"/>
                             <Controller>
-                                <div id="trigger" class="trigger"/>
                                 <Scene duration={1200} classToggle="animation-graphic-how" triggerElement="trigger" >
                                     <div class="how-graphic" />
                                 </Scene>

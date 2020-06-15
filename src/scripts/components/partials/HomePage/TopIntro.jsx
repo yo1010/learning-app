@@ -7,10 +7,9 @@ import "./styles/TopIntro.scss"
 
 export default class TopIntro extends Component {
     render() {
-        console.log(window.scrollY)
         return (
             <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
-                <Scene pin indicator={true}>
+                <Scene pin>
                     <div class="top-intro-container">
                         <div class="pinned-container">
                             <div class="row mt-5 top-intro-row">
@@ -24,7 +23,7 @@ export default class TopIntro extends Component {
                                     </div>
                                     <h1 class="top-heading"> Visualize and understand your learning </h1>
                                     <h5 class="sub-heading"> We are on a mission to improve the learning process and increase the accessibility of information across the industry</h5>
-                                    <button class="join-button mx-auto">Join us on our mission</button>
+                                    <button class="join-button mx-auto"><span>Join us on our mission</span> <i class="fas fa-users" /></button>
                                 </div>
                                 <div class="lightbulb-container ml-auto col-12 col-md-6 col-lg-6">
                                     <img src={lightbulbImage} class="lightbulb-image mx-auto row" alt="lightbulb" />

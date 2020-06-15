@@ -26,7 +26,7 @@
         margin-top: -10px;
         width: 100%;
         font-size: 33px;
-        font-weight: bold;
+        font-weight: 900;
         color: white;
         font-family: 'Nunito', sans-serif;
     }
@@ -46,6 +46,12 @@
     .join-button {
         @extend .yellow-button;
         margin-top: 20px;
+
+        &:hover {
+            i {
+                color: $cyan-300;
+            }
+        }
     }
 
     .circle {
@@ -55,6 +61,15 @@
         height: 30%;
         width: 10px;
         border-radius: 100%;
+    }
+
+    i {
+        transition: all .3s;
+        position: relative;
+        bottom: -5.5px;
+        font-size: 28px;
+        margin-left: 5px;
+        color: white !important;
     }
 }
 

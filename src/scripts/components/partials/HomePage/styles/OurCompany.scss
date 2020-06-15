@@ -29,14 +29,38 @@
 }
 
 .team-messages {
-    width: 50%;
+    width: 60%;
     padding-bottom: 20px;
+    position: absolute;
+    left: 20%;
+
+    .subscribe-btn {
+        margin-top: 1rem;
+        border: 5px solid $yellow-800;
+        color: $yellow-800;
+        font-size: 35px;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: all .3s;
+
+        i {
+            position: relative;
+            bottom: -2.5px;
+            font-size: 41px;
+        }
+
+        &:hover {
+            border: 5px solid $cyan-900;
+            color: $cyan-900;
+            transform: scale(1.05);
+        }
+    }
 }
 
 .team-text {
     display: flex;
     align-items: center;
-    box-shadow: 0 0 100px -60px $yellow-800;
+    box-shadow: 0 0 100px -35px $yellow-800;
     padding: 10px;
     margin: 30px;
     transition: all .2s;
@@ -49,7 +73,14 @@
 
 .team-paragraph {
     width: 60%;
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 30px;
+
+    li {
+        font-size: 20px;
+        list-style-type: none;
+        color: $cyan-700;
+    }
 }
 
 .section {
@@ -59,38 +90,40 @@
     width: 100% !important;
 }
 
-.animate-card {
-    transition: all .2s;
-    box-shadow: 0 0 100px -35px gray;
-    transform: scale(1.1);
-}
-
 .graphic-container {
-    position: relative;
-    bottom: 0;
-    right: 0;
-
     .graphic {
         transition: all .5s;
-        position: relative;
+        position: absolute;
         width: 200px;
         height: 200px;
-        left: -140px;
-        bottom: 100px;
+        bottom: 200px;
+        left: 50px;
         border-radius: 50%;
         border: solid 40px $yellow-400;
     }
     
     .graphic-one {
         transition: all .5s;
-        position: relative;
-        bottom: 50px;
+        position: absolute;
+        bottom: -150px;
         left: -120px;
         width: 300px;
         height: 300px;
         border-radius: 50%;
         border: solid 55px $cyan-900;
     }
+}
+
+.graphic-two {
+    transition: all .5s;
+    position: absolute;
+    z-index: 1;
+    bottom: 580px;
+    right: -550px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 78px $cyan-700;
 }
 
 .animation-graphic-one {

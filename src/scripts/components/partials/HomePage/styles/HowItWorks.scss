@@ -12,7 +12,6 @@
 
 .how-header {
     padding: 30px;
-    margin-bottom: 5rem;
 
     .how-title {
         color: white;
@@ -32,6 +31,17 @@
 
 .cards-row {
     @extend .flex-row;
+
+    .col-12 {
+        i {
+            position: relative;
+            font-size: 110px;
+            left: -5px;
+            bottom: -20px;
+            z-index: -1;
+            color: $yellow-600;
+        }
+    }
 }
 
 .how-card {
@@ -71,7 +81,7 @@
         width: 200px;
         height: 200px;
         left: -140px;
-        bottom: 100px;
+        bottom: 180px;
         border-radius: 50%;
         border: solid 40px $yellow-600;
     }
@@ -79,7 +89,7 @@
     .how-graphic-one {
         transition: all .5s;
         position: relative;
-        bottom: 80px;
+        bottom: 180px;
         left: -120px;
         width: 300px;
         height: 300px;

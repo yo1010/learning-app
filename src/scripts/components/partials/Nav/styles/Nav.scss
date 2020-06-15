@@ -33,16 +33,17 @@
         font-family: 'Nunito', sans-serif;
     }
 
-    .nav-btn {
-        @extend .yellow-button;
-        padding: 0 5px 0 8px;
-        margin-right: 5px;
-        background-color: $cyan-900;
+    .auth-link {
+        transition: all .2s;
+        background-color: transparent;
+        color: $cyan-900;
+        font-weight: 900;
+        font-family: 'Nunito', sans-serif;
 
-        .nav-link {
+        &:hover {
+            background-color: $yellow-600;
             color: white;
-            font-size: 16px;
-        }
+        }   
     }
 
     .nav-beta {
