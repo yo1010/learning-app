@@ -26,7 +26,7 @@ export default class Nav extends Component {
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <Link class="nav-link auth-link" to="/">Log In</Link>
-                        <a class="nav-link auth-link" href="#">Join Now</a>
+                        <Link class="nav-link auth-link" to="/">Join now</Link>
                     </ul>
                 </div>
             </nav>
