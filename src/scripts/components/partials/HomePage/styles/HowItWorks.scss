@@ -10,6 +10,10 @@
     overflow: hidden;
     border-top-right-radius: 45px;
     border-top-left-radius: 45px;
+
+    @media #{$mobile} {
+        padding: 0;
+    }
 }
 
 .how-header {
@@ -21,12 +25,25 @@
         font-family: 'Nunito', sans-serif;
         font-size: 45px;
     }
+
+    @media #{$mobile} {
+        padding: 0;
+
+        .header-container {
+            margin-bottom: 20px !important;
+            margin-top: 15px !important;
+        }
+
+        .how-title {
+            margin: 0;
+        }
+    }
 }
 
 .cards-row {
     @extend .flex-row;
 
-    .col-12 {
+    .col-6 {
         i {
             position: relative;
             font-size: 110px;
@@ -34,6 +51,16 @@
             bottom: -20px;
             z-index: -1;
             color: $yellow-600;
+        }
+
+        @media #{$mobile} {
+            margin: 0 !important;
+            margin-top: 10px !important;
+
+            i {
+                font-size: 50px;
+                bottom: 0;
+            }
         }
     }
 }
@@ -59,6 +86,19 @@
         font-size: 55px;
         color: $cyan-900;
     }
+
+    @media #{$mobile} {
+        min-height: 0;
+        padding: 5px;
+        line-height: 20px;
+        h3 {
+            font-size: 40px;
+        }
+
+        h5 {
+            font-size: 15px !important;
+        }
+    }
 }
 
 .bounce {
@@ -71,23 +111,24 @@
 
     .how-graphic {
         transition: all .5s;
+        z-index: -1;
         position: relative;
         width: 200px;
         height: 200px;
         left: -140px;
-        bottom: 180px;
+        bottom: 210px;
         border-radius: 50%;
-        border: solid 40px $yellow-600;
+        border: solid 40px $yellow-800;
     }
     
     .how-graphic-one {
         transition: all .5s;
         position: relative;
-        bottom: 180px;
+        bottom: 200px;
         left: -120px;
         width: 300px;
         height: 300px;
         border-radius: 50%;
-        border: solid 55px $yellow-800;
+        border: solid 55px $yellow-600;
     }
 }

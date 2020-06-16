@@ -10,13 +10,13 @@ export default class HowItWorks extends Component {
                 <Scene pin>
                     <div class="how-container" id="how-it-works">
                         <div class="how-header row">
-                            <div class="mx-auto my-5">
+                            <div class="mx-auto my-5 header-container">
                                 <h1 class="how-title">How it works</h1>
                             </div>
                         </div>
                         <div class="how-steps">
                             <div class="cards-row">
-                                <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                <div class="mx-auto my-5 col-6 col-md-6 col-lg-3">
                                     <i class="fas fa-sign-in-alt" />
                                     <div class="how-card" id="animate">
                                         <span>
@@ -25,7 +25,7 @@ export default class HowItWorks extends Component {
                                         </span>
                                     </div>
                                 </div>
-                                <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                <div class="mx-auto my-5 col-6 col-md-6 col-lg-3">
                                     <i class="fas fa-chart-pie" />
                                     <div class="how-card">
                                         <span>
@@ -34,7 +34,7 @@ export default class HowItWorks extends Component {
                                         </span>
                                     </div>
                                 </div>
-                                <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                <div class="mx-auto my-5 col-6 col-md-6 col-lg-3">
                                     <i class="fas fa-clipboard-list" />
                                     <div class="how-card">
                                         <span>
@@ -43,7 +43,7 @@ export default class HowItWorks extends Component {
                                         </span>
                                     </div>
                                 </div>
-                                <div class="mx-auto my-5 col-12 col-md-6 col-lg-3">
+                                <div class="mx-auto my-5 col-6 col-md-6 col-lg-3">
                                     <i class="fas fa-clipboard-check"></i>
                                     <div class="how-card">
                                         <span>

@@ -21,10 +21,6 @@
         }
     }
 
-    .navbar-toggler-icon {
-        color: white !important;
-    }
-
     .nav-item .nav-link {
         color: $yellow-800;
         text-decoration: none;
@@ -52,5 +48,12 @@
         font-size: 11px !important;
         margin-left: -12px;
         margin-bottom: 15px !important;
+    }
+
+    .navbar-toggler {
+        i {
+            color: white;
+            font-size: 28px;
+        }
     }
 }
