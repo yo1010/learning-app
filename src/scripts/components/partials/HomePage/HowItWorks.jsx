@@ -8,7 +8,7 @@ export default class HowItWorks extends Component {
             
             <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
                 <Scene pin>
-                    <div class="how-container">
+                    <div class="how-container" id="how-it-works">
                         <div class="how-header row">
                             <div class="mx-auto my-5">
                                 <h1 class="how-title">How it works</h1>
@@ -55,13 +55,8 @@ export default class HowItWorks extends Component {
                             </div>
                         </div>
                         <div class="how-graphic-container">
-                            <div id="trigger" class="trigger"/>
-                            <Controller>
-                                <Scene duration={1200} classToggle="animation-graphic-how" triggerElement="trigger" >
-                                    <div class="how-graphic" />
-                                </Scene>
-                                <div class="how-graphic-one" />
-                            </Controller>
+                            <div class="how-graphic" />
+                            <div class="how-graphic-one" />
                         </div>
                     </div>
                 </Scene>

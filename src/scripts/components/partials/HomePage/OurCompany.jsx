@@ -7,10 +7,10 @@ export default function OurCompany() {
     return (
         <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
             <Scene pin>
-                <div class="team-container">
-                    <div class="team-header row">
+                <div class="team-container" id="who-we-are">
+                    <div class="team-header">
                         <div class="mx-auto">
-                            <h1 class="team-title my-4">Who we are</h1>
+                            <h1 class="team-title my-3">Who we are</h1>
                         </div>
                     </div>
                     <div class="team-messages mx-auto mb-5">
@@ -24,7 +24,7 @@ export default function OurCompany() {
                             <div class="mx-auto my-5 team-paragraph">
                                 How you can help:
                                     <li>we want to hear about your difficulties in learning</li>
-                                    <li>we want to get your feedback on the produc we are creating</li>
+                                    <li>we want to get your feedback on the product we are creating</li>
                                     <li>we want to listen to any suggestions or features you might need to help your learning</li>
                             </div>
                             <div class="graphic-two" />
@@ -32,14 +32,9 @@ export default function OurCompany() {
                         <button class="subscribe-btn">Subscribe to get involved <i class="fas fa-envelope" /></button>
                     </div>
                     <div class="graphic-container">
-                        <Controller>
-                            <Scene duration={1000} classToggle="animation-graphic-one" triggerElement="trigger" indicators="true" >
-                                <div class="graphic" />
-                            </Scene>
-                            <div class="graphic-one" />
-                        </Controller>
+                        <div class="graphic" />
+                        <div class="graphic-one" />
                     </div>
-                    <div id="trigger" class="trigger-one" />
                 </div>
             </Scene>
         </Controller>

@@ -6,7 +6,7 @@ export default class Nav extends Component {
     render() {
         return (
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand ml-5" href="#">Learn<span class="cyan">IFY</span></a>
+                <a class="navbar-brand ml-1" href="#">Learn<span class="cyan">IFY</span></a>
                 <span class="nav-beta" to="/">Beta Version</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -18,16 +18,10 @@ export default class Nav extends Component {
                             <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Who we are</a>
+                            <a class="nav-link" href="#who-we-are">Who we are</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">How it works</a>
-                        </li>
-                        <li class="nav-item">
-                            <Link class="nav-link" to="/ourjourney">Our Journey</Link>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#how-it-works">How it works</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
