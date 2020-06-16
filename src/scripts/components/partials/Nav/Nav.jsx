@@ -6,7 +6,7 @@ export default class Nav extends Component {
     render() {
         return (
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand ml-1" href="#">Learn<span class="cyan">IFY</span></a>
+                <Link class="navbar-brand ml-1" to="/">Learn<span class="cyan">IFY</span></Link>
                 <span class="nav-beta" to="/">Beta Version</span>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
