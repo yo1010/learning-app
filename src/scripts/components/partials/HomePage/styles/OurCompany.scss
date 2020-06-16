@@ -3,45 +3,150 @@
 
 .team-container {
     padding: 20px;
+    background-color: whitesmoke;
+    min-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
 }
 
 .team-header {
-    padding: 30px;
+    padding: 20px;
+
+    @media #{$mobile} {
+        padding: 0px;
+    }
 
     .team-title {
         color: $yellow-700;
         font-weight: bold;
         font-family: 'Nunito', sans-serif;
-    }
-
-    .separator {
-        width: 15%;
-        min-width: 80px;
-        background-color: $yellow-700;
-        border: solid 3px $yellow-700;
-        border-radius: 25px;
+        font-size: 45px;
     }
 }
 
 .team-messages {
-    width: 75%;
-}
+    width: 60%;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 20%;
 
-.team-text {
-    box-shadow: 0 0 100px -60px $yellow-800;
-    padding: 10px;
-    margin: 20px;
-    transition: box-shadow .5s, transform .2s;
-    color: $cyan-900;
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
+    @media #{$laptop} {
+        width: 80%;
+        left: 10%;
+    }
 
-    &:hover {
-        box-shadow: 0 0 100px -40px gray;
-        transform: scaleY(1.05);
+    @media #{$mobile} {
+        width: 100%;
+        padding-bottom: 0;
+        left: 0;
+    }
+
+    .team-text {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin: 30px;
+        transition: all .2s;
+        color: $cyan-900;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        min-height: 220px;
+
+        @media #{$mobile} {
+            padding: 0;
+            margin: 0;
+        }
+
+        .team-paragraph {
+            width: 60%;
+            font-size: 25px;
+            line-height: 30px;
+            background-color: whitesmoke;
+
+            @media #{$mobile} {
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            li {
+                font-size: 20px;
+                list-style-type: none;
+                color: $cyan-700;
+
+                @media #{$mobile} {
+                    font-size: 15px;
+                }   
+            }
+        }
+    }
+
+    .subscribe-btn {
+        margin-top: 1rem;
+        border: 5px solid $yellow-800;
+        color: $yellow-800;
+        font-size: 35px;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: all .3s;
+
+        i {
+            position: relative;
+            bottom: -2.5px;
+            font-size: 41px;
+        }
+
+        @media #{$mobile} {
+            font-size: 20px;
+            i {
+                font-size: 28px;
+            }
+        }
+
+        &:hover {
+            border: 5px solid $cyan-900;
+            color: $cyan-900;
+            transform: scale(1.05);
+        }
     }
 }
 
-.team-paragraph {
-    width: 60%;
+
+.graphic-container {
+    .graphic {
+        z-index: -1;
+        transition: all .5s;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        bottom: 200px;
+        left: -150px;
+        border-radius: 50%;
+        border: solid 40px $cyan-300;
+    }
+    
+    .graphic-one {
+        z-index: -1;
+        transition: all .5s;
+        position: absolute;
+        bottom: -150px;
+        left: -120px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: solid 55px $cyan-900;
+    }
+}
+
+.graphic-two {
+    transition: all .5s;
+    position: absolute;
+    z-index: 1;
+    bottom: 580px;
+    right: -550px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: solid 78px $cyan-700;
 }

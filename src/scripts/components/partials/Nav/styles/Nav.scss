@@ -1,8 +1,13 @@
 @import "../../../../../scripts/static/styles/colors.scss";
+@import "../../../../../scripts/static/styles/main.scss";
 
 .navbar {
-    background-color: $yellow-700 !important;
-    box-shadow: 0 23px 50px -22px gray;
+    background-color: transparent !important;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 
     .navbar-brand {
         color: white !important;
@@ -16,17 +21,29 @@
         }
     }
 
+    .navbar-toggler-icon {
+        color: white !important;
+    }
+
     .nav-item .nav-link {
-        color: $cyan-600;
+        color: $yellow-800;
         text-decoration: none;
         outline: none;
         font-weight: 500;
         font-family: 'Nunito', sans-serif;
     }
 
-    .auth-item .auth-link {
-        color: white !important; 
+    .auth-link {
+        transition: all .2s;
+        background-color: transparent;
+        color: $cyan-900;
+        font-weight: 900;
         font-family: 'Nunito', sans-serif;
+
+        &:hover {
+            background-color: $yellow-600;
+            color: white;
+        }   
     }
 
     .nav-beta {

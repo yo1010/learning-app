@@ -1,3 +1,16 @@
+$mobile: "(max-width: 567px)";
+$mobile-landscape: "(orientation:landscape) and (max-width: 850px)";
+$tablet:  "(max-width: 768px)";
+$tablet-landscape: "(max-width: 1024px)";
+$laptop-mini:  "(max-width: 1280px)";
+$laptop:  "(max-width: 1600px)";
+$desktop-mini: "(max-width: 1600px)";
+$desktop: "(max-width: 1750px)";
+$medium-desktop: "(max-width: 1919px)";
+$large-desktop: "(min-width: 1920px)";
+
+
+
 .image-credit {
     font-size: 10px !important;
 }
@@ -10,4 +23,39 @@
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-font {
+    font-family: 'Nunito', sans-serif;
+}
+
+.yellow-button {
+    background-color: $yellow-700;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 26px 60px -10px gray;
+    transition: background-color .2s, box-shadow .2s, transform .2s;
+    outline: none;
+
+    &:hover {
+        background-color: $yellow-800;
+        box-shadow: 0 26px 60px -6px gray;
+        transform: scale(1.02);
+    }   
+}
+
+.pin-section {
+    position: relative;
+    display: block;
+    overflow: visible;
 }
